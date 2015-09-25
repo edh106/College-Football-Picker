@@ -54,6 +54,3 @@ with open(sys.argv[1], newline = '\n') as file:
 	#Display top 15 picks
 	for row in newlist[0:15]:
 		print('{0[pick]:<20}\t{0[lineupt]:+.1f}'.format(row))
-		
-		
-
