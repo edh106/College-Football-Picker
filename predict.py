@@ -4,8 +4,9 @@
 #read in csv
 
 import csv
+import sys
 
-with open("ncaapredictions.csv", newline = '\n') as file:
+with open(sys.argv[1], newline = '\n') as file:
 	contents = csv.reader(file, delimiter= ',')
 	row_titles = next(contents)
 	contents = csv.DictReader(file,fieldnames=row_titles)
